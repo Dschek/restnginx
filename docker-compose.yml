@@ -10,6 +10,9 @@ services:
           target: /restf:ro
   nginx:
     container_name: restnginx
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "9002:80"
     volumes:
