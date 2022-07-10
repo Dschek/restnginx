@@ -1,13 +1,6 @@
 version: '3'
 
 services:
-  front:
-    container_name: restf
-    image: "docker.pkg.github.com/dschek/restfrontreact/restfrontreact:latest"
-    volumes:
-        - type: bind
-          source: /usr/share/nginx/html/rest/restf
-          target: /restf:ro
   nginx:
     container_name: restnginx
     build:
